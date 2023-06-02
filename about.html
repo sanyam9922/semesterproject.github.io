@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+
+        }
+        body{
+           background-color: #ebefee;
+        }
+
+        .container{
+            display: flex;
+            margin-top: 100px;
+            height: 1100px;
+        }
+        .info{
+            display: flex;
+            flex-direction: column;
+            height: 700px;
+            width: 600px;
+            margin-left: 100px;
+            
+        }
+        .graph{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+        }
+        .info h6{
+            font-size: 20px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: #42ba9b;
+            padding: 5px;
+        }
+        .info h4{
+            font-size: 50px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: #121112;
+            padding: 5px;
+            margin: 0px;
+            margin-bottom: -22px;
+        }
+        .info p{
+            margin-top: 30px;
+            font-size: 20px;
+            font-family: cursive;
+        }
+        #pie-chart{
+            margin-top: 30px;
+            margin-left: 50px;
+            height: 350px;
+            margin-bottom: 320px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="info">
+            <h6>ABOUT WILY RESEARCH</h6>
+            <h4>We exist to </h4>
+            <h4>empower</h4>
+            <h4>researchers.</h4>
+
+            <p style="width:490px">We started ResearchGate in 2008 to address the problems we saw in the way science is created and shared. Our mission is to connect the world of science and make research open to all. The 20 million researchers in our community come from diverse sectors in over 190 countries, and use ResearchGate to connect, collaborate, and share their work.</p>
+            <h6>WHO WE SERVE</h6>
+            <h4>We put the </h4>
+            <h4>researcher first.</h4>
+                          
+            <p style="width:490px">ResearchGate is for you: the scientist, the clinician, the student, the engineer, the public health worker, the lab technician, the computer scientist.
+
+                The work you do is important. But too often, you are overworked, underpaid, have low job security, and operate under high pressure. Becoming a researcher in the first place was no easy task, and access all too often relies on privilege. Our purpose is to make your life easier.
+                
+                We offer a home for you—a place to share your work and connect with peers around the globe, traversing the borders and silos of science. We want to empower you to do your best work, advance your field, and make a better world for all.
+                
+                For the intellectually curious, the seekers of truth, the geeks, the makers: our members offer you a treasure trove of knowledge in areas as diverse as materials science, agriculture, human health, and quantum physics.</p>
+
+                  
+        </div>
+        <div class="graph">
+            <div class="pie">
+                <canvas id="pie-chart"></canvas>
+            </div>
+            <div class="picture">
+                <img src="aboutphoto.jpg" height="350px" style="padding: 10px; border-radius: 20px; position: relative; float: right;" alt="">
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="chartMin.js"></script>
+</body>
+</html>

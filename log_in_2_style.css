@@ -1,0 +1,112 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+h2{
+    font-family: sans-serif;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-left: 400px;
+    color: white;
+    z-index: 1;
+}
+body{
+    font-family: sans-serif;
+    height: 640px;
+    background-repeat: no-repeat;
+    background-image: url("loginimg.jpg");
+    background-size: cover;
+}
+.container{
+    /* height: 450px;
+    width: 500px;
+    border: 2px solid blue;
+    align-items:center ;
+    align-self: center;
+    margin: 50px 0px 0px 10px;*/
+    margin-top: 100px;
+    margin-left: 75px;
+    position: absolute;
+    left: 30%;
+    width: 380;
+    padding: 20px 30px;
+    background: #fff;
+    box-shadow: 2px 2px 5px 5px rbga(0,0,0,15);
+    border-radius: 10px;
+    /* transform: translate(-50%,-50%)scale(1.25); */
+    transition: top 0ms ease-in-out 200ms,
+                opacity 200ms ease-in-out 0ms,
+                transform 200ms ease-in-out 0ms;
+
+    /* background-image: url(login2.jpg); */
+    background-repeat: no-repeat;
+    /* background-size: cover;
+    background:linear-gradient(to right rgb(6, 61, 100)); */
+} 
+.close-btn{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 15px;
+    height: 15px;
+    background: #a46897;
+    color: #011118;
+    text-align: center;
+    line-height: 15px;
+    border-radius: 2px;
+
+}
+.container.active{
+    top: 50%;
+    opacity: 1;
+    transform: translate(-50%,-50%)scale(1);
+}
+h3{
+    text-align: center;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    font-size: large;
+    margin-block-end: 50px;
+
+}
+input[type="text"],input[type="password"]{
+    padding: 15px;
+    width: 90%;
+    border-radius: 5px;
+    
+}
+.user,.pass,.check{
+    margin:5px 0px 5px 15px;
+    font-weight: 40;
+}
+label{
+    margin-bottom: 20px;
+    
+}
+.signin:hover{
+    box-shadow: 2px black;
+
+}
+button{
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    background: #41037b;
+    color: #d8e0dc;
+    border-radius:10px;
+    cursor: pointer;
+   
+}
+
+.signup{
+    margin:10px 0px 0px 80px;
+}
+.forget{
+justify-content: end;
+margin-top:100px;
+margin-left: 15px;
+
+}

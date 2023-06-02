@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contribute</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #0d1117;
+        }
+
+        .main h1, span{
+            margin-left: 60px;
+            color: white;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .fill{
+            display: flex;
+            flex-direction: column;
+            width: 20%;
+            justify-content: center;
+            margin-left: 50px;
+            padding: 10px;
+        }
+        .fill label{
+            color: white;
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+        .fill input{
+            border-radius: 12px;
+            /* border: none; */
+            padding: 4px;
+            margin-top: 4px;
+            margin-bottom: 4px;
+            text-transform: capitalize;
+            /* box-shadow: 3px 3px 3px 0px; */
+            border-width: 1px;
+            border-color: white;
+            background-color: #0d1117;
+
+        }
+        .fill #Description{
+            width: 250%;
+            border-radius: 0px 12px 12px 12px;
+            background-color: #0d1117;
+            padding: 5px;
+            margin-bottom: 5px;
+        }
+        ::placeholder {
+            color: white;
+        }
+        #submit{
+            align-self: flex-end;
+            cursor: pointer;
+            color: white;
+        }
+        #submit:hover{
+            align-self: flex-end;
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <form action="post">
+            <h1>Create a New Post</h1>
+            <span>Your contribution may contain files, images, pdf, text etc and they can be uploaded right here.</span>
+            <div class="fill">
+                <label for="Name">Name of research paper</label> <!--for is used to highlight input field-->
+                <input type="text" name="Name" placeholder="Name" id="Name">
+
+                <label for="Topic">Topic</label> <!--for is used to highlight input field-->
+                <input type="text" name="Topic" placeholder="Topic" id="Topic">
+
+                <label for="Field">Field of research</label> <!--for is used to highlight input field-->
+                <input type="text" name="Field" placeholder="Field of your research or book" id="Field">
+
+                <label for="Description">Description</label>
+                <textarea name="Description" id="Description" cols="1000" rows="20" placeholder="Description of your paper"></textarea>
+
+                <label for="Date">Date of Publishing</label>
+                <input style="color: white;" type="date" min="2023-06-1">
+
+                <div class="choose" style="display: flex; padding: 5px;">
+                    <span style="font-size: 18px; font-family: sans-serif;font-weight: bolder;  margin-left: 0px; margin-right: 15px;">Access:</span>
+                    <label for="public">Public access</label>
+                    <input style="margin-right: 70px;" type="radio" name="access" value="public" id="public">
+    
+                    <label for="private">private access</label>
+                    <input type="radio" name="access" value="private" id="private">
+                </div>
+
+                <label for="file">Files:</label>
+                <input type="file" name="file" id="file">
+
+                <label style="margin-top: 5px; margin-bottom: 2px;" for="license">License</label>
+                <select style="border-radius: 10px;" name="license" id="license">
+                    <option value="null">Select</option>
+                    <option value="CC BY 4.0">CC BY 4.0</option>
+                    <option value="CC-BY-NC-ND 4.0">CC-BY-NC-ND 4.0</option>
+                </select>
+
+                <input type="submit" id="submit">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

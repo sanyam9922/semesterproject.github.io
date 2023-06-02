@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <form action="action.html" method="get" enctype="multipart/form-data">
+        <div>
+            <label for="Name">Name</label> <!--for is used to highlight input field-->
+            <input type="text" name="Name" value="User" id="name">
+            <input type="text" name="name1" id="name1" placeholder="last name">
+        </div>
+        <div>
+            <label for="Email">Email</label>
+            <input type="email" name="email" id="name" required placeholder="Enter your email">
+
+        </div>
+        <div>
+            <label for="Age">Age</label>
+            <input type="number" name="age" id="age" min="0" max="100" step="1">
+        </div>
+        <div>
+            <label for="Password">Password</label>
+            <input type="password" name="password" placeholder="Enter Password" required id="">
+        </div>
+        <div>
+            <label for="Date">Birthday</label>
+            <input type="date" min="2023-03-10">
+        </div>
+        <div>
+            Favourite food:
+            <div>
+                <label for="banana">banana</label>
+                <input type="checkbox" name="banana" id="banana">
+            </div>
+            <div>
+                <label for="banana">apple</label>
+                <input type="checkbox" name="apple" id="apple">
+            </div>
+            <div>
+                <label for="banana">orange</label>
+                <input type="checkbox" name="orange" id="orange">
+            </div>
+        </div>
+        <div>
+            Gender:
+            <label for="male">male</label>
+            <input type="radio" name="gender" value="male" id="male">
+
+            <label for="female">female</label>
+            <input type="radio" name="gender" value="female" id="female">
+        </div>
+        <div>
+            <label for="eyeColour">eye colour</label>
+            <select name="eyeColour" id="eyeColour">
+                <option value="Green">green</option>
+                <option value="Red">red</option>
+                <option label="Blue" value="Blue"></option>
+            </select>
+        </div>
+        <input type="hidden" name="hidden" id="hidden" value="hello">
+        <div>
+            <label for="file">file</label>
+            <input type="file" name="file" id="file">
+        </div>
+        
+        <div>
+            <label for="text">feedback</label>
+            <textarea name="bio" id="text" cols="30" rows="1" placeholder="Enter feedback"></textarea>
+        </div>
+        <div>
+            <label for="url">url</label>
+            <input type="url" name="url" id="url">
+        </div>
+        <div>
+            <label for="colour">colour</label>
+            <input type="color" name="colour" id="colour">
+        </div>
+        <div>
+            <label for="phone">phone</label>
+            <input type="tel" name="phone" id="phone">
+        </div>
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+
+                                                                                                                                                                            
+    </form>
+</body>
+
+</html>
