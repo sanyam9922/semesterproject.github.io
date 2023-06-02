@@ -1,0 +1,246 @@
+body {
+    background-color: #fff;
+}
+.navigation{
+    display: flex;
+    background-color: black;
+    height: 50px;
+    width: auto;
+    margin-left: 0;
+    margin-right: 0;
+    align-items: center;
+    border-radius: 10px;
+    position: relative;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+.list{
+    font-family: sans-serif;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+}
+.list:hover{
+    color: blue;
+    cursor: pointer;
+    
+}
+#logo img{
+    height:45px;
+    width:55px;
+    border: white;
+    border-radius: 10px 0px 0px 10px;
+    margin-left: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+#login button{
+    margin-left: 581px;
+    float:right;
+
+}
+#login button a{
+    text-decoration: none;
+}
+
+h1 {
+    color: black;
+    font-size: 45px;
+    text-align: start;
+    padding: 1px 1px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 0em;
+    
+}
+
+h2 {
+    color: black;
+    font-size: 30px;
+    font-family: sans-serif;
+    text-align: center;
+    padding: 9px 1px;
+    margin-top: 0em;
+    margin-bottom: 0em;
+}
+.introduction{
+    background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
+}
+
+button {
+    border-style: solid;
+    border-radius: 10px;
+    border-color: white;
+    padding: 10px 10px;
+    transition: transform .2s;
+
+}
+#optionbtn{
+    border-style: solid;
+    border-radius: 10px;
+    border-color: black;
+    padding: 10px 10px;
+    transition: transform .5s;
+}
+
+#optionbtn:hover {
+    border-style: solid;
+    border-radius: 10px;
+    border-color: black;
+    padding: 10px 10px;
+    background-color: rgb(248, 9, 9);
+    color: white;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+#optionbtn:active{
+    transform: scale(0.8);
+}
+button:hover {
+    border-style: solid;
+    border-radius: 10px;
+    border-color: white;
+    padding: 10px 10px;
+    background-color: bisque;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+input {
+    border-style: solid;
+    border-radius: 10px;
+    width: 30%;
+    padding: 10px 10px;
+    margin: 8px;
+    align-items: end;
+}
+.fields{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: large;
+    margin-left: 0px;
+    margin-right: 40px;
+
+}
+
+#logo {
+    border-radius: 100px;
+    border: 1px;
+    padding: 2px;
+    max-width: 90px;
+    height: auto;
+}
+
+#research {
+    max-width: 100%;
+    padding: 5px 0px;
+    border-radius: 50px 50px 50px 50px;
+}
+
+.marq {
+    color: red;
+    font-size: 30px;
+    font-family: cursive;
+    margin-top: -1em;
+    margin-bottom: 0em;
+}
+
+.img1 {
+    padding: 10px;
+    border-radius: 20px;
+    
+}
+
+#list {
+    font-size: 20px;
+}
+
+.img2 {
+    padding: 5px;
+    border-radius: 20px;
+    transition: transform .2s;
+}
+.transitions{
+    
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-80%);
+    transition: all 1s;
+
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.img2:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.img3 {
+    padding: 3px;
+    border-radius: 100%;
+
+}
+
+#youtube {
+    padding: 3px;
+    border-radius: 100%;
+    margin-bottom: -1em;
+    margin-left: -1em;
+    margin-right: -2em;
+}
+
+.div1 {
+
+    font-size: 20px;
+    font-family: sans-serif;
+    padding: 2px;
+}
+
+label {
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+#special {
+    margin-left: 17.1em;
+    font-size: 20px;
+    margin-top: 10px;
+    float: right;
+    cursor: pointer;
+    padding: 5px;
+    border-style: outset;
+    background-color: rgb(216, 28, 28);
+    transition: transform .2s;
+}
+
+#special:hover {
+    transform: scale(1.2);
+}
+.images1{
+    background-image: linear-gradient(45deg, #2f4ae2, #af4261);
+    padding: 2px;
+}
+
+#products{
+    color: green;
+    background: white;
+    font-size: 20px;
+    
+}
+
+#products li{
+    list-style: none;
+    margin-left: -50px;
+    font-family: sans-serif;
+}
+
+#products li::before{
+    content: "\00BB";
+}
+
