@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in page </title>
+    <link rel="stylesheet" href="log_in_2_style.css">
+
+</head>
+
+<body>
+    <h2> Sign in with your user name and password</h2>
+    <form action="post"></form>
+    
+    <div class="container" >
+        <div class="close-btn">&times;</div>
+            <h3>Sign in</h3>
+            <div class="contaner2">
+            <div class="user">
+                <label for="username" id="userl">Your username</label>
+                <input type="text" name="username" id="username" placeholder="Your username" required>
+
+            </div>
+            <div class="pass">
+                <label for="password" "> Your password</label>
+                <input type="password" name="password" id="password" placeholder="Your password" required>
+                
+            </div>
+            </div>
+            <div class="check">
+                <input type="checkbox" name="checkbox" id="checkbox">
+                 <label for="check">Remember me</label>
+            </div>
+           
+             <div class="submit" onclick="validateForm()">
+                <button type="submit" value="submit" class="signin">Sign in </button>
+             </div>
+             <div class="signup">
+               <p> Don't have an account ?<a href="#signup">Signup</a></p>
+             </div>
+             <button onclick="window.location.href = 'https://www.facebook.com/';" style="background-color: rgb(24, 119, 242); font-weight: normal;"><span style="color:white; font-weight: bold;">Continue with Facebook</span><svg class="gUZ Bp9" height="19" width="19" viewBox="0 0 24 24" aria-label="Facebook" role="img"><path d="m17.75 3.984-2.312.001c-1.811 0-2.163.842-2.163 2.077v2.724h4.323l-.563 4.267h-3.76V24H8.769V13.053H5V8.786h3.769V5.64C8.769 1.988 11.05 0 14.383 0c1.596 0 2.967.116 3.367.168v3.816z"></path></svg></button>
+
+            <a href="#forget" id="forget">Forget password</a>
+
+            </div>
+    </div>
+
+
+
+
+<script>
+   function validateForm()
+   {
+        let name = document.getElementById("username").value;
+        let password = document.getElementById("password").value;
+        if(name.length<3)
+        {
+            alert("Name must be more than 3 letters")
+            return;
+        }
+        if(password.length <4)
+        {
+            alert("Password must be more than 4 digits")
+            return;
+        }
+        if(name == "abc" && password == 1234)
+        {
+            document.write("<h1 style=\"text-align: center; font-style: cursive\">Welcome to your Dash board</h1>")
+        }
+        else if(name != "abc" || password != 1234)
+        {
+            alert("Wrong Username or Password")
+        }
+   }
+</script>   
+</body>
+
+</html>
